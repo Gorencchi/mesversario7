@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>mesversarioo</title>
+<style>
+  body {
+    background: #000;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+
+  #mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #content {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  #sidebar {
+    width: 250px;
+    background: #111;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sidebar h3 {
+    margin: 10px 0;
+    font-family: 'digital-7_mono', monospace;
+    font-size: 2em;
+    animation: flicker 2s infinite;
+    color: #fff;
+  }
+
+  #images-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  /* Las imágenes en tamaño natural, sin restricciones */
+  #images-box img {
+    max-width: 100%; /* que no se salga del contenedor */
+    height: auto;    /* mantiene la proporción original */
+    border: 3px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  #images-box img:hover {
+    transform: rotate(3deg) scale(1.2);
+    box-shadow: 0 0 15px #fff inset;
+  }
+
+  #mainArea {
+    flex: 1;
+    background: #111;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  pre {
+    background: #000;
+    border: 1px solid #fff;
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  .buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .button {
+    background: #fff;
+    color: #000;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  @keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      opacity: 1;
+    }
+    20%, 22%, 24%, 55% {
+      opacity: 0.4;
+    }
+  }
+</style>
+</head>
+<body>
+<div id="mainDiv">
+  <div id="topBar" style="width:100%; background:#000; color:#fff; padding:10px; text-align:center;">
+    &gt; hola, bienvenido amor ('^_^) ♪
+  </div>
+
+  <div id="content">
+    <div id="sidebar">
+      <h3>Us?</h3>
+      <div id="images-box">
+        <!-- Imágenes en tamaño natural -->
+        <img src="oli.jpg" alt="Us 1" />
+        <img src="tumblr_46e6f78a8ed0a9e221fb15e9c5fb87de_7a886a18_640.webp" alt="Imagen 2" />
+        <img src="tilinazo.jpg" alt="Imagen 3" />
+      </div>
+    </div>
+    <div id="mainArea">
+      <h2 style="color:#fff;">FILE.txt</h2>
+      <pre>
+Te amo mucho mi amorcito, eres el peak de los peaks.
+      </pre>
+      <div class="buttons">
+        <button class="button" onclick="window.open('https://youtu.be/v7qvbL1nzDo?si=vM49t_9QUwSgrbgX', '_blank')">Regalo 1</button>
+        <button class="button" onclick="window.open('https://youtu.be/F31GZnM730I?si=8iiWsYSGu1AXEyeO', '_blank')">Link 2</button>
+        <button class="button" onclick="window.open('https://youtu.be/zbmFor4l_4I?si=DlGvvGKI2GjZxkIG', '_blank')">ola</button>
+      </div>
+      <h2 style="color:#fff;">FILE2.txt</h2>
+      <pre>
+Perdon por no haber estado muy presente este mes contigo T_T, pero espero que te guste este regalo de mesversario muak.
+      </pre>
+    </div>
+  </div>
+</div>
+</body>
+</html>
